@@ -68,3 +68,32 @@ print(msg_r)
 
 msg = "hello woRld"  # 一番最初だけ大文字
 print(msg.capitalize())
+
+# 文字列の一部取り出し、format, islower, isupper
+
+msg = "hello, my name is taro"
+print(msg[:5])  # 5文字目まで取り出す
+print(msg[:6])
+print(msg[6:])  # 6文字目以降
+print(msg[1:6])
+print(msg[1:10:2])  # 一つ飛ばし
+
+# format
+print('hello{}'.format('Taro'))
+name = "Jiro"
+print(f'hello{name}')  # 変数を展開して表示 3.6-
+print(f"{name=}")  # 3.8-
+
+msg = 'apple'
+print(msg.islower())
+print(msg.isupper())
+
+#find, index, rfind, rindex
+msg = "ABCDEABC"
+print(msg.find('ABC'))  # 二番目のABCは無視される
+print(msg.rfind('ABC'))  # 右端から
+print(msg.index('ABC'))
+print(msg.rindex('ABC'))
+
+print(msg.find('ABCE'))  # 見つからなかった場合-1と表示される
+print(msg.index("ABCE"))  # indexの場合は、エラーが表示される
