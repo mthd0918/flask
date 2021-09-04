@@ -58,7 +58,7 @@ print(msg.rstrip('CBA'))
 msg = "abcABC"
 msg_u = msg.upper()  # 大文字
 msg_l = msg.lower()  # 小文字
-msg_s = msg.swapcase()  # 大文字込み時入れ替え 日本語は変わらない
+msg_s = msg.swapcase()  # 大文字小文字入れ替え 日本語は変わらない
 print(msg_u, msg_l, msg_s)
 
 # replace
